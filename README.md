@@ -13,10 +13,10 @@ sane_backend_install (USB)
 2. Run sane_backend_install.sh, it will download, unzip, configure, make, install, test scan.
 
 Useful Commands
-> Find scanners: sane-find-scanner
-> List Scanners: scanimage -L
-> Help for KodakAIO device: scanimage --help -d 'kodakaio'
-> Basic low res scan:  scanimage -d kodakaio --mode gray --resolution 300 -x 215.9 -y 279.40 > MyDocScan.pgm
+* Find scanners: sane-find-scanner
+* List Scanners: scanimage -L
+* Help for KodakAIO device: scanimage --help -d 'kodakaio'
+* Basic low res scan:  scanimage -d kodakaio --mode gray --resolution 300 -x 215.9 -y 279.40 > MyDocScan.pgm
       
 sane_docker (network)
 --------------------
