@@ -1,11 +1,14 @@
 # AdventPrinterCentos
 
 Setup files for Advent AW10 Printer Centos 7
+(Also works for Kodak AIO)
+
+Im uploading all this in the hope that someone finds it if they need it :)
 
 SANE BACKEND INSTALL (USB)
 
-1. Connect Scanner with USB
-2. Run SH script, will install sane backend 
+1. Connect Scanner with USB.
+2. Run SH script, download, unzip, configure, make, install, test scan.
 
 Useful Commands
 Find scanners: sane-find-scanner
