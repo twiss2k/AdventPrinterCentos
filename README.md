@@ -18,7 +18,7 @@ Useful Commands
 * Help for KodakAIO device: scanimage --help -d 'kodakaio'
 * Basic low res scan:  scanimage -d kodakaio --mode gray --resolution 300 -x 215.9 -y 279.40 > MyDocScan.pgm
       
-sane_docker (network)
+sane_docker WIP! (network)
 --------------------
 
 Make sure you have docker installed with:
