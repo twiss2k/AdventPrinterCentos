@@ -5,7 +5,8 @@ Setup files for Advent AW10 Printer Centos 7
 
 Im uploading all this in the hope that someone finds it if they need it :)
 
-SANE BACKEND INSTALL (USB)
+sane_backend_install.sh (USB)
+-----------------------------
 
 1. Connect Scanner with USB.
 2. Run SH script, download, unzip, configure, make, install, test scan.
