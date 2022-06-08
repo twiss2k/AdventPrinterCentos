@@ -23,6 +23,8 @@ scan.sh
 
 Basic script to scan, process raw image with mogrify, remove PGM file.
 Ensure that scanner is first found with scanimage -L, then run script to scan :)
+Mogrify is provided by ImageMagick
+* sudo yum install ImageMagick
       
 sane_docker WIP! (network)
 --------------------
