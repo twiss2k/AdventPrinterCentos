@@ -1,0 +1,24 @@
+FROM centos:7
+
+RUN yum install -y epel-release && \
+yum install -y nginx git php-fpm mysqli gcc sane-backends-devel avahi-glib avahi-glib-devel && \
+yum clean all
+
+COPY conf/nginx.conf /etc/nginx/
+COPY conf/php.ini /etc/
+COPY conf/backends-RELEASE_1_0_23_FIXED2/ /root/backends-RELEASE_1_0_23_FIXED2/
+
+WORKDIR /root/backends-RELEASE_1_0_23_FIXED2/
+
+RUN ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var BACKENDS=kodakaio
+RUN make && make check && make install
+
+COPY conf/kodakaio.conf /etc/sane.d/
+COPY conf/dll.conf /etc/sane.d/
+
+EXPOSE 8610-8614/udp
+EXPOSE 8610-8614/tcp
+
+#RUN scanimage -L
+
+CMD nginx; php-fpm
