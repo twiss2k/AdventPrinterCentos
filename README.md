@@ -17,6 +17,12 @@ Useful Commands
 * List Scanners: scanimage -L
 * Help for KodakAIO device: scanimage --help -d 'kodakaio'
 * Basic low res scan:  scanimage -d kodakaio --mode gray --resolution 300 -x 215.9 -y 279.40 > MyDocScan.pgm
+
+scan.sh
+-------
+
+Basic script to scan, process raw image with mogrify, remove PGM file.
+Ensure that scanner is first found with scanimage -L, then run script to scan :)
       
 sane_docker WIP! (network)
 --------------------
