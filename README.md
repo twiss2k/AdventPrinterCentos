@@ -35,5 +35,5 @@ Make sure you have docker installed with:
 3. systemctl enable docker
 
 1. Git pull https://github.com/twiss2k/AdventPrinterCentos.git
-2. cd AdventPrinterCentos/docker
+2. cd AdventPrinterCentos/sane_docker
 3. ./rebuild.sh
