@@ -21,7 +21,7 @@ Useful Commands
 scan.sh
 -------
 
-Basic script to scan, process raw image with mogrify, remove PGM file.
+Basic script to scan, process raw image with mogrify, remove tiff file.
 Ensure that scanner is first found with scanimage -L, then run script to scan :)
 Mogrify is provided by ImageMagick
 * sudo yum install ImageMagick
