@@ -6,7 +6,7 @@ Setup files for Advent AW10 Printer Centos 7
 Im uploading all this in the hope that someone finds it if they need it :)
 #linux
 
-sane_backend_install (USB)
+sane_backend_install (USB scanning)
 -----------------------------
 
 1. Connect Scanner with USB.
@@ -18,7 +18,7 @@ Useful Commands
 * Help for KodakAIO device: scanimage --help -d 'kodakaio'
 * Basic low res scan:  scanimage -d kodakaio --mode gray --resolution 300 -x 215.9 -y 279.40 > MyDocScan.pgm
 
-scan.sh
+scan.sh (USB scanning)
 -------
 
 Basic script to scan, process raw image with mogrify, remove tiff file.
@@ -26,7 +26,7 @@ Ensure that scanner is first found with scanimage -L, then run script to scan :)
 Mogrify is provided by ImageMagick
 * sudo yum install ImageMagick
       
-sane_docker WIP! (network)
+sane_docker WIP! (network printing/scanning)
 --------------------
 
 Make sure you have docker installed with:
