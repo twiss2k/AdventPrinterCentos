@@ -36,4 +36,4 @@ Make sure you have docker installed with:
 
 1. Git pull https://github.com/twiss2k/AdventPrinterCentos.git
 2. cd AdventPrinterCentos/sane_docker
-3. ./rebuild.sh
+3. ./reset_container.sh
